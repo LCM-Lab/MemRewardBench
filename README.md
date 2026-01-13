@@ -17,32 +17,6 @@ The benchmark includes **2,400 high-quality samples** across **three core tasks*
 
 ## How to Use
 
-### Loading Data
-
-You can download and load MemRewardBench data through Hugging Face datasets:
-```python
-from datasets import load_dataset
-
-# Load specific task
-data = load_dataset('LCM-Lab/MemRewardBench', 'Long-context_Reasoning', split='train')
-
-# Or load all tasks
-tasks = ['Long-context_Reasoning', 'Multi-turn_Dialogue_Understanding', 'Long-form_Generation']
-for task in tasks:
-    data = load_dataset('LCM-Lab/MemRewardBench', task, split='train')
-```
-
-Alternatively, download the entire dataset using huggingface-cli:
-```bash
-huggingface-cli download \
-  --repo-type dataset \
-  --resume-download \
-  LCM-Lab/MemRewardBench \
-  --local-dir ./data
-```
-
----
-
 ### Data Format
 
 All data in MemRewardBench are standardized to the following format:
@@ -71,31 +45,29 @@ All data in MemRewardBench are standardized to the following format:
 
 ### 1. Clone and Install
 ```bash
-git clone https://github.com/LCM-Lab/loomeval
-cd loomeval
+git clone https://github.com/LCM-Lab/LOOM-Eval
+cd LOOM-Eval/loomeval
 pip install -e .
 ```
 
-### 2. Run Evaluation
-```bash
-loomeval.run \ 
-  --model_path /path/to/model \
-  --cfg_path /benchmarks/Reward/MemRewardBench/configs/MemRewardBench.yaml \
-  --server vllm \
-  --device 0 1 2 3 4 5 6 7 \
-  --gp_num 1 \
-  --output_dir /path/to/results \
+---
 
+### 2. Evaluate
+
+Once the environment is set up, you can proceed with model evaluation. Here's how you can do it.
+
+### **Run the Evaluation Script**:
+
+```bash
+python ./eval.py --model-path meta-llama/Meta-Llama-3.1-8B-Instruct  --gpus 0 1 2 3 4 5 6 7 --tp-size 1
 ```
 
-**Key Arguments**:
-- `--model_path`: (Required) HuggingFace model path or API model name
-- `--cfg_path:` (Required) Path to the benchmark configuration file
-- `--output_dir:` (Optional) Results output directory (default: auto-generated path)
-- `--device:` GPU IDs to use for open-source models (default: all available GPUs)
-- `--gp_num:` Number of GPUs allocated per task instance
-- `--server:` Backend inference framework to use for model execution
+This command will start the evaluation for the model. Ensure that the `--model-path` points to the directory of the model you wish to evaluate
 
+#### Parameters:
+
+- `--model-path`: Path to the model directory (required).
+- `--save-path`: (Optional) Path to save evaluation results. If not specified, results are saved to the `./results` directory.
 
 ---
 
@@ -115,13 +87,6 @@ loomeval.run \
 | **Long-form Generation** | Sequential | 49 / 152 / 147 / 67 / 42 | 457 |
 | | Parallel | 51 / 48 / 53 / 133 / 58 | 343 |
 | **Total** | 10 settings | 419 / 503 / 566 / 563 / 349 | **2,400** |
-
----
-
-
-## 📬 Contact
-
-Questions? Suggestions? Reach out at: `iiiigray19@gmail.com` and `zctang2000@gmail.com`
 
 ---
 
