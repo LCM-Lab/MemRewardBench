@@ -1,6 +1,0 @@
-Download: 3.1s
-Tokenizer: 2.8s
-Inference: 45.2s
-Total: 51.2s
-Completed: 1/1
-Speed: 0.02 tasks/sec
