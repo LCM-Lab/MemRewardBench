@@ -118,15 +118,9 @@ loomeval.run \
 
 ---
 
-## Citation
-
-If you use MemRewardBench in your research, please cite:
-```bibtex
-
-```
 
 ## Contact
-
+Questions? Suggestions? Reach out at: `iiiigray19@gmail.com` and `zctang2000@gmail.com`
 ---
 
 ## License
