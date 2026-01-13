@@ -37,7 +37,7 @@ Alternatively, download the entire dataset using huggingface-cli:
 huggingface-cli download \
   --repo-type dataset \
   --resume-download \
-  YourOrg/MemRewardBench \
+  LCM-Lab/MemRewardBench \
   --local-dir ./data
 ```
 
