@@ -52,7 +52,7 @@ if __name__ == "__main__":
     )
 
     parser.add_argument(
-        "--save-path", type = str, default = None,
+        "--save-path", type = str, default = "./Results",
         help = "The Evaluating Results Saving path"
     )
     
