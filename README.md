@@ -90,5 +90,11 @@ This command will start the evaluation for the model. Ensure that the `--model-p
 
 ---
 
+## 📬 Contact
+
+Questions? Suggestions? Reach out at: `iiiigray19@gmail.com` and `zctang2000@gmail.com`
+
+---
+
 ## License
 This benchmark is released under the Apache-2.0 License.
