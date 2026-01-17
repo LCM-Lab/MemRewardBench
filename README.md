@@ -121,7 +121,7 @@ loomeval.run \
 
 ## 📬 Contact
 
-Questions? Suggestions? Reach out at: `iiiigray19@gmail.com` and `zctang2000@gmail.com`
+If you have any questions, plz check out at: `iiiigray19@gmail.com` or `zecheng.tang@foxmail.com`.
 
 ---
 
