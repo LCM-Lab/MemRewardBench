@@ -1,4 +1,11 @@
-# 📜 MemRewardBench
+
+# <img src="src/logo.png" width="32" vertical-align="middle"> MemRewardBench
+
+<p align="center">
+    <a href="https://arxiv.org/pdf/2601.11969"><img src="https://img.shields.io/badge/arXiv-2601.11969-b31b1b.svg" alt="Paper"></a>
+    <a href="https://huggingface.co/datasets/LCM-Lab/MemRewardBench"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Datasets-blue" alt="Dataset"></a>
+    <a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-green.svg" alt="License"></a>
+</p>
 
 > *The first benchmark to systematically evaluate Reward Models' ability to assess long-term memory management in LLMs across contexts up to 128K tokens.*
 
@@ -122,6 +129,21 @@ loomeval.run \
 ## 📬 Contact
 
 If you have any questions, plz check out at: `iiiigray19@gmail.com` or `zecheng.tang@foxmail.com`.
+
+---
+
+## Citation
+
+If you find our work helpful, please cite:
+
+```bibtex
+@article{tang2026memoryrewardbench,
+  title={MemoryRewardBench: Benchmarking Reward Models for Long-Term Memory Management in Large Language Models},
+  author={Tang, Zecheng and Ji, Baibei and Sun, Ruoxi and Wang, Haitian and You, WangJie and Yijun, Zhang and Zhu, Wenpeng and Qi, Ji and Li, Juntao and Zhang, Min},
+  journal={arXiv preprint arXiv:2601.11969},
+  year={2026}
+}
+```
 
 ---
 
