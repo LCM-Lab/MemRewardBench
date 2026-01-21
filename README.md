@@ -76,6 +76,8 @@ All data in MemRewardBench are standardized to the following format:
 
 ## Evaluation
 
+We utilize the **[LOOMEval](https://github.com/LCM-Lab/loomeval)** repository for evaluation. The evaluation code and data processing scripts for **MemRewardBench** have been fully integrated into LOOMEval for ease of use.
+
 ### 1. Clone and Install
 ```bash
 git clone https://github.com/LCM-Lab/loomeval
