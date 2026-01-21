@@ -137,11 +137,14 @@ If you have any questions, plz check out at: `iiiigray19@gmail.com` or `zecheng.
 If you find our work helpful, please cite:
 
 ```bibtex
-@article{tang2026memoryrewardbench,
-  title={MemoryRewardBench: Benchmarking Reward Models for Long-Term Memory Management in Large Language Models},
-  author={Tang, Zecheng and Ji, Baibei and Sun, Ruoxi and Wang, Haitian and You, WangJie and Yijun, Zhang and Zhu, Wenpeng and Qi, Ji and Li, Juntao and Zhang, Min},
-  journal={arXiv preprint arXiv:2601.11969},
-  year={2026}
+@misc{tang2026textttmemoryrewardbenchbenchmarkingrewardmodels,
+      title={$\texttt{MemoryRewardBench}$: Benchmarking Reward Models for Long-Term Memory Management in Large Language Models}, 
+      author={Zecheng Tang and Baibei Ji and Ruoxi Sun and Haitian Wang and WangJie You and Zhang Yijun and Wenpeng Zhu and Ji Qi and Juntao Li and Min Zhang},
+      year={2026},
+      eprint={2601.11969},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2601.11969}, 
 }
 ```
 
